@@ -1,0 +1,18 @@
+[
+  {
+    "title" : "¿Qu&iacute;en soy?",
+    "text"  : "Hola, mi nombre es Morgan y me encanta escribir código que es eficiente."
+  },
+  {
+    "title" : "Lo que hago",
+    "text"  : "&Eacute;stos son algunos de los idiomas que uso en un d&iacute;a a d&iacute;a."
+  },
+  {
+    "title" : "Estar en contacto",
+    "text"  : "Vivo en la nube y no puedo ser visto. Env&iacute;a mensajes a las buenas personas en  <a target='_blank' href='https://twitter.com/codeschool'>Code School</a> y me avisar&aacute;n."
+  },
+  {
+    "title" : "Prueba de nuevo texto",
+    "text" : "Prueba pruebisima pruebota de generacion json."
+  }
+]

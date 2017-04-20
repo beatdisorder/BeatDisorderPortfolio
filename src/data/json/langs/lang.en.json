@@ -1,3 +1,9 @@
 {
-    "greeting" : "Hello"
+  "title-site" : "Be4t D!sorder",
+  "previous" : "PRevious",
+  "next" : "Next",
+  "home" : "Home",
+  "about" : "About",
+  "spanish" : "Spanish",
+  "english" : "English"
 }

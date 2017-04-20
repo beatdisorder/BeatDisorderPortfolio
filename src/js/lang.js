@@ -16,7 +16,7 @@ var translate = function (jsdata)
 function changeLanguaje(userLang)
 {
 	userLangSelection = userLang;
-	$.getJSON('data/json/langs/lang.' + userLangSelection + '.json', translate);
+	$.getJSON('data/json/langs/lang.' + userLangSelection + '.json?nocache=' + (new Date()).getTime(), translate);
 }
 
 function getSelectedLanguaje()
@@ -25,8 +25,8 @@ function getSelectedLanguaje()
 }
 
 if (userLangSelection !== undefined)
-	$.getJSON('data/json/langs/lang.' + userLangSelection + '.json', translate);
+	$.getJSON('data/json/langs/lang.' + userLangSelection + '.json?nocache=' + (new Date()).getTime(), translate);
 else if (langCode in langs)
-	$.getJSON('data/json/langs/lang.' + langCode + '.json', translate);
+	$.getJSON('data/json/langs/lang.' + langCode + '.json?nocache=' + (new Date()).getTime(), translate);
 else
-	$.getJSON('data/json/langs/lang.' + defaultLangCode + '.json', translate);
+	$.getJSON('data/json/langs/lang.' + defaultLangCode + '.json?nocache=' + (new Date()).getTime(), translate);
