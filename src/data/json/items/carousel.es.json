@@ -1,7 +1,8 @@
 [
   {
     "title" : "¿Qu&iacute;en soy?",
-    "text"  : "Hola, mi nombre es Morgan y me encanta escribir código que es eficiente."
+    "text"  : "Hola, mi nombre es Morgan y me encanta escribir código que es eficiente.",
+    "image" : "resources/images/img_flower2.jpg"
   },
   {
     "title" : "Lo que hago",

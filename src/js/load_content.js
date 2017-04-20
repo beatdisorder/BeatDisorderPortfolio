@@ -14,8 +14,18 @@ function chargeCarousel(selectedLanguaje){
     for(let i = 0 ; i < json.length ; i++){
       let object = json[i];
       $( ".carousel-indicators" ).append("<li data-target=\"#portfolio-carousel\" data-slide-to=\"" + i + "\"" + ( i === 0 ? " class=\"active\"></li>" : "></li>"));
-      $( ".carousel-inner" ).append("<div class=\"item " + ( i === 0 ? " active\">" : "\">") + "<div class=\"container\"><div class=\"carousel-caption\"><h1>"
-      + object.title + "</h1><p> " + object.text + "</p></div></div></div>");
+
+      $( ".carousel-inner" ).append(
+        "<div class=\"item "
+      // define active if is index 0
+      + ( i === 0 ? " active\"" : "\"")
+      // define background image if exist
+      + (object.image !== undefined ? "style=\"background:url('" + object.image + "') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" : "")
+      + "><div class=\"container\"><div class=\"carousel-caption\">"
+      // define title
+      +"<h1>" + object.title + "</h1>"
+      // define text
+      +"<p> " + object.text + "</p></div></div></div>");
     }
   });
 }
